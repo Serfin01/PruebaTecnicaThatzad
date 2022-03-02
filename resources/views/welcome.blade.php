@@ -14,6 +14,7 @@
 				display: table;
 				font-weight: 100;
 				font-family: 'Lato';
+				background-color: black;
 			}
 
 			.container {
@@ -41,6 +42,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>
+				<img src="/img/indice.png">
 				<div class="quote">{{ Inspiring::quote() }}</div>
 			</div>
 		</div>
