@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('mainPc');
 });
-Route::get('/pruebas', function () {
+
+Route::get('/inside', function () {
     return view('todos.index');
-});
+})->name('todos');;
+
+Route::post('/inside', TodosController::class, 'store')->name('todos');

@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container w-25 border p-4 mt-5">
-        <form>
+        <form action="{{route('todos')}}" method="POST">
             <div class="mb-3">
                 <label for="tittle" class="form-label">Entérate del tiempo en la zona exacta que te interesa buscando por código postal.</label>
                 <input type="text" name="tittle" placeholder="Introduce el código postal" class="form-control">
