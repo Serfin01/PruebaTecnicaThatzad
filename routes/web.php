@@ -22,4 +22,5 @@ Route::get('/inside', function () {
     return view('todos.index');
 })->name('todos');;
 
-Route::post('/inside', TodosController::class, 'store')->name('todos');
+//Route::post('/inside', TodosController::class, 'store')->name('todos');
+Route::post('/inside', [TodosController::class, '__invoke'])->name('todos');

@@ -7,7 +7,8 @@ use App\Models\Todo;
 
 class TodosController extends Controller
 {
-    public function store(Request $request){
+    //public function store(Request $request){
+    public function __invoke(Request $request){
         $request->validate([
             'title' => 'required|min:3'
         ]);
