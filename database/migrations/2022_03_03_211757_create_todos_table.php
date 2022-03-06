@@ -11,6 +11,7 @@ return new class extends Migration
      *
      * @return void
      */
+    //php artisan migrate:fresh pa refrescar
     public function up()
     {
         Schema::create('todos', function (Blueprint $table) {

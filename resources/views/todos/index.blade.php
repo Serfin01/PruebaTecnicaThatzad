@@ -1,3 +1,4 @@
+<!--
 @extends('mainPc')
 
 @section('content')
@@ -14,4 +15,4 @@
         </form>
     </div>
 
-@endsection
+@endsection-->

@@ -15,6 +15,9 @@ class TodosSeeder extends Seeder
      */
     public function run()
     {
+        
+        DB::table('todos')->truncate();
+        //DB::statement('SET FOREIGN_KEY_CHECKS = 1;');
         DB::table('todos')->insert([
             'title' => '5240',
             'ciudad' => 'Madrid',
