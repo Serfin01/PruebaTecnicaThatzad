@@ -13,21 +13,46 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
+            background-color: salmon;
+            background-image: url("\img\fondo.png");
+        }
+        .form-text{
+            color:white;
+        }
+        .form-label{
+            color:white;
+        }
+        .form-control{
+            color: white;
+            background: none;
+            border: 2px solid white;
+        }
+        .btn-primary{
+            width: 100%;
+        }
+        .imagen{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
 
     </style>
 </head>
 <body>
-    <img src="resources\images">
-    <div class="container w-25 border p-4 mt-5">
+    <img src="\img\fondo2.png" class="imagen">
+    <div class="container w-25 p-4 mt-5">
+    <img src="\img\indice.png">
         <form action="{{route('todos')}}" method="POST">
             @csrf
             <div class="mb-3">
-                <label for="tittle" class="form-label">Entérate del tiempo en la zona exacta que te interesa buscando por código postal.</label>
+                <label for="tittle" class="form-label text-center mb-4">Entérate del tiempo en la zona exacta que te interesa buscando por código postal.</label>
                 <input type="text" name="tittle" placeholder="Introduce el código postal" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Buscar</button>
-                <div class="form-text">¡Que la lluvia no te pare!</div>
+            <button type="submit" class="btn-primary">Buscar</button>
+            <div class="form-text text-center mt-5">¡Que la lluvia no te pare!</div>
         </form>
     </div>
     <!--@yield('content')-->
