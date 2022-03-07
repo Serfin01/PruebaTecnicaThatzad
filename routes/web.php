@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('mainPc');
 });
 
+Route::get('/time', function () {
+    return view('todos.time');
+});
+
 Route::get('/inside', function () {
     return view('todos.index');
 })->name('todos');;
