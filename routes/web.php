@@ -23,8 +23,8 @@ Route::get('/time', function () {
 });
 
 Route::get('/inside', function () {
-    return view('todos.index');
+    return view('todos.time');
 })->name('todos');;
 
-//Route::post('/inside', TodosController::class, 'store')->name('todos');
-Route::post('/inside', [TodosController::class, '__invoke'])->name('todos');
+//Route::get('/inside', [TodosController::class, '__invoke'])->name('todos');
+//Route::post('/inside', [TodosController::class, '__invoke'])->name('todos');
